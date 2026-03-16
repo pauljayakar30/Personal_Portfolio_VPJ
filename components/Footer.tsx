@@ -9,13 +9,10 @@ export default function Footer() {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
-      className="max-w-7xl mx-auto px-4 md:px-8 py-12 border-t border-black/10 text-center"
+      className="max-w-7xl mx-auto px-4 md:px-8 pt-32 pb-12 border-t border-black/10 text-center mt-20"
     >
       <p className="text-[#86868B] text-sm font-medium">
         © {new Date().getFullYear()} Vasu Paul Jayakar. All rights reserved.
-      </p>
-      <p className="text-[#86868B]/60 text-xs mt-2 font-medium">
-        Designed with Apple-inspired Minimalist UI
       </p>
     </motion.footer>
   );
