@@ -75,7 +75,6 @@ export default function ImageCarousel({ images, alt }: ImageCarouselProps) {
               fill
               className="object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
               referrerPolicy="no-referrer"
-              unoptimized={true}
             />
           </motion.div>
         </AnimatePresence>
@@ -149,7 +148,6 @@ export default function ImageCarousel({ images, alt }: ImageCarouselProps) {
                     referrerPolicy="no-referrer"
                     sizes="100vw"
                     priority
-                    unoptimized={true}
                   />
                 </motion.div>
               </AnimatePresence>
