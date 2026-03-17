@@ -57,7 +57,7 @@ export default function ImageCarousel({ images, alt }: ImageCarouselProps) {
   return (
     <>
       <div 
-        className="relative w-full h-full overflow-hidden group rounded-2xl sm:rounded-[2rem] cursor-pointer"
+        className="relative w-full h-[250px] sm:h-[320px] overflow-hidden group rounded-2xl sm:rounded-[2rem] cursor-pointer"
         onClick={() => setIsLightboxOpen(true)}
       >
         <AnimatePresence initial={false}>
@@ -67,7 +67,7 @@ export default function ImageCarousel({ images, alt }: ImageCarouselProps) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1.2, ease: "easeInOut" }}
-            className="absolute inset-0"
+            className="absolute inset-0 w-full h-full"
           >
             <Image
               src={images[currentIndex]}
