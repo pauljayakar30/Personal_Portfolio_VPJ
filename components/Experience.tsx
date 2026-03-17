@@ -13,7 +13,8 @@ export default function Experience() {
       images: [
         "/images/MohanaMantra-1.webp",
         "/images/MohanaMantra-2.webp",
-        "/images/MohanaMantra-3.webp"
+        "/images/MohanaMantra-3.webp",
+        "/images/MohanaMantra-4.webp"
       ],
       bgColor: "bg-[#007AFF]/85 backdrop-blur-3xl border border-white/20",
       textColor: "text-white",
