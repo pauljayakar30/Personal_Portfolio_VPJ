@@ -11,7 +11,7 @@ export default function Experience() {
       date: "2024",
       description: "Orchestrated the entire registration lifecycle for 12,000+ attendees, including form design, payment processing, and data tracking. Streamlined on-site operations to ensure a seamless check-in experience and efficient resolution of attendee queries.",
       images: [
-        "/images/MohanaMantra-1.jpg",
+        "/images/MohanaMantra-1.webp",
         "/images/MohanaMantra-2.webp",
         "/images/MohanaMantra-3.webp",
         "/images/MohanaMantra-4.webp"
