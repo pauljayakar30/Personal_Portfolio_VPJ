@@ -74,7 +74,6 @@ export default function ImageCarousel({ images, alt }: ImageCarouselProps) {
               alt={`${alt} - Image ${currentIndex + 1}`}
               fill
               className="object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
-              referrerPolicy="no-referrer"
               unoptimized
             />
           </motion.div>
@@ -146,7 +145,6 @@ export default function ImageCarousel({ images, alt }: ImageCarouselProps) {
                     alt={`${alt} - Image ${currentIndex + 1} (Fullscreen)`}
                     fill
                     className="object-contain"
-                    referrerPolicy="no-referrer"
                     sizes="100vw"
                     priority
                     unoptimized
