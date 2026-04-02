@@ -7,6 +7,7 @@ import './globals.css'; // Global styles
 import SmoothScroll from '@/components/SmoothScroll';
 import BottomNav from '@/components/BottomNav';
 import CustomCursor from '@/components/CustomCursor';
+import TopNav from '@/components/TopNav';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
@@ -40,6 +41,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
       </head>
       <body className="relative min-h-screen antialiased selection:bg-blue-200 bg-white text-[#1d1d1f]" suppressHydrationWarning>
         <CustomCursor />
+        <TopNav />
         {/* Subtle Monochromatic Background Orbs to enhance the glass blur effect */}
         <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
           <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-black/[0.03] blur-[120px] animate-pulse" style={{ animationDuration: '8s' }} />

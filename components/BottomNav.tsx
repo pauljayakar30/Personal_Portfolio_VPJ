@@ -7,7 +7,8 @@ import { Home } from "lucide-react";
 
 const navItems = [
   { name: "Work", href: "/work" },
-  { name: "Others", href: "/others" },
+  { name: "Education", href: "/others" },
+  { name: "Others", href: "/more" },
 ];
 
 export default function BottomNav() {
