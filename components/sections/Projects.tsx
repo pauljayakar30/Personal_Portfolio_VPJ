@@ -74,20 +74,20 @@ export default function Projects() {
     visible: { 
       height: 'auto', 
       opacity: 1, 
-      marginTop: 16, // Reduced from 24
+      marginTop: 16,
       transition: { 
         duration: 0.4, 
-        ease: "easeOut",
+        ease: "easeOut" as const,
         staggerChildren: 0.1,
         delayChildren: 0.1
       }
     }
-  };
+  } as const;
 
   const itemVariants = {
     hidden: { opacity: 0, y: 10 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } }
-  };
+    visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" as const } }
+  } as const;
 
   return (
     <section id="work" className="relative w-full pb-20 pt-10 font-['Plus_Jakarta_Sans',sans-serif] bg-[#f5f5f7]">
