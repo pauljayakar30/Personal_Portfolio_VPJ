@@ -1,15 +1,13 @@
-import Projects from "@/components/Projects";
-import Experience from "@/components/Experience";
-import Achievements from "@/components/Achievements";
-import Footer from "@/components/Footer";
+import Projects from "@/components/sections/Projects";
+import Skills from "@/components/sections/Skills";
+import Footer from "@/components/layout/Footer";
 
 export default function WorkPage() {
   return (
-    <main className="min-h-screen relative overflow-hidden flex flex-col">
+    <main className="min-h-screen relative overflow-hidden flex flex-col bg-[#f5f5f7]">
       <div className="flex-grow">
         <Projects />
-        <Experience />
-        <Achievements />
+        <Skills />
       </div>
       <Footer />
     </main>

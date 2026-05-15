@@ -7,6 +7,7 @@ import { Home } from "lucide-react";
 
 const navItems = [
   { name: "Work", href: "/work" },
+  { name: "Education", href: "/education" },
   { name: "Others", href: "/others" },
 ];
 
@@ -23,9 +24,8 @@ export default function BottomNav() {
       >
         <Link
           href="/"
-          className={`liquid-glass flex items-center justify-center w-12 h-12 rounded-full transition-colors duration-300 ${
-            pathname === "/" ? "text-[#1d1d1f] bg-black/5" : "text-[#86868B] hover:text-[#1d1d1f]"
-          }`}
+          className={`liquid-glass flex items-center justify-center w-12 h-12 rounded-full transition-colors duration-300 ${pathname === "/" ? "text-[#1d1d1f] bg-black/5" : "text-[#86868B] hover:text-[#1d1d1f]"
+            }`}
         >
           <Home size={20} />
         </Link>
@@ -44,9 +44,8 @@ export default function BottomNav() {
             <Link
               key={item.name}
               href={item.href}
-              className={`relative px-4 py-2 rounded-full text-sm font-medium transition-colors duration-300 ${
-                isActive ? "text-[#1d1d1f]" : "text-[#86868B] hover:text-[#1d1d1f]"
-              }`}
+              className={`relative px-4 py-2 rounded-full text-sm font-medium transition-colors duration-300 ${isActive ? "text-[#1d1d1f]" : "text-[#86868B] hover:text-[#1d1d1f]"
+                }`}
             >
               {isActive && (
                 <motion.div
