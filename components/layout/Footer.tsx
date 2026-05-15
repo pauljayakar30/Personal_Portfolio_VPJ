@@ -1,19 +1,42 @@
 "use client";
 
-import { motion } from "motion/react";
+import Link from "next/link";
+
+const socialLinks = [
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/pauljayakar30/" },
+  { name: "WhatsApp", href: "https://wa.me/916303599139" },
+  { name: "GitHub", href: "https://github.com/pauljayakar30" },
+  { name: "Email", href: "mailto:vasupauljayakar@gmail.com" },
+];
 
 export default function Footer() {
   return (
-    <motion.footer 
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
-      className="max-w-7xl mx-auto px-4 md:px-8 pt-32 pb-12 border-t border-black/10 text-center mt-20"
-    >
-      <p className="text-[#86868B] text-sm font-medium">
-        © {new Date().getFullYear()} Vasu Paul Jayakar. All rights reserved.
-      </p>
-    </motion.footer>
+    <footer className="fixed bottom-0 left-0 right-0 z-40 bg-[#f5f5f7]">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-3 flex items-center justify-between">
+        {/* Left: Branding + Copyright */}
+        <div className="flex items-center gap-2">
+          <span className="text-sm font-bold text-[#1d1d1f] tracking-tight">
+            Portfolio
+          </span>
+          <span className="text-xs text-[#86868B] font-medium">
+            © {new Date().getFullYear()} Vasu Paul Jayakar
+          </span>
+        </div>
+
+        {/* Right: Social Links */}
+        <nav className="flex items-center gap-6">
+          {socialLinks.map((link) => (
+            <Link
+              key={link.name}
+              href={link.href}
+              target="_blank"
+              className="text-xs font-medium text-[#86868B] hover:text-[#1d1d1f] transition-colors duration-300"
+            >
+              {link.name}
+            </Link>
+          ))}
+        </nav>
+      </div>
+    </footer>
   );
 }

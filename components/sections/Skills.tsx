@@ -109,19 +109,6 @@ export default function Skills() {
 
       </div>
 
-      {/* Inspirational Quote / Personality Section */}
-      <div className="mt-40 mb-10 flex flex-col items-center text-center px-6">
-        <h3 className="text-4xl md:text-5xl lg:text-[4rem] font-medium tracking-tight text-[#1d1d1f] leading-tight max-w-5xl font-serif italic">
-          "First, solve the problem. <br className="hidden md:block"/> Then, write the code."
-        </h3>
-        <div className="mt-10 flex items-center gap-6">
-          <div className="w-12 h-[1px] bg-gray-300" />
-          <span className="text-xs font-bold tracking-[0.3em] text-gray-500 uppercase">
-            John Johnson
-          </span>
-          <div className="w-12 h-[1px] bg-gray-300" />
-        </div>
-      </div>
     </section>
   );
 }
