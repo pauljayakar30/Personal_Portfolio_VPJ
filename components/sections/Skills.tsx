@@ -41,10 +41,10 @@ export default function Skills() {
       transition: {
         delay: index * 0.1,
         duration: 0.8,
-        ease: [0.25, 0.4, 0.25, 1]
+        ease: [0.25, 0.4, 0.25, 1] as const
       }
     })
-  };
+  } as const;
 
   return (
     <section id="skills" className="relative w-full pb-40 pt-20 font-['Plus_Jakarta_Sans',sans-serif] bg-[#f5f5f7]">
