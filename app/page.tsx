@@ -1,5 +1,5 @@
-import Hero from "@/components/Hero";
-import Footer from "@/components/Footer";
+import Hero from "@/components/sections/Hero";
+import Footer from "@/components/layout/Footer";
 import { InfiniteGrid } from "@/components/ui/the-infinite-grid";
 
 export default function Home() {

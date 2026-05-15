@@ -1,13 +1,13 @@
-import type {Metadata} from 'next';
+import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Script from 'next/script';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css'; // Global styles
-import SmoothScroll from '@/components/SmoothScroll';
-import BottomNav from '@/components/BottomNav';
-import CustomCursor from '@/components/CustomCursor';
-import TopNav from '@/components/TopNav';
+import SmoothScroll from '@/components/layout/SmoothScroll';
+import BottomNav from '@/components/layout/BottomNav';
+import CustomCursor from '@/components/layout/CustomCursor';
+import TopNav from '@/components/layout/TopNav';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: 'Personal portfolio of Vasu Paul Jayakar',
 };
 
-export default function RootLayout({children}: {children: React.ReactNode}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} font-sans`}>
       <head>
@@ -48,13 +48,13 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
           <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] rounded-full bg-black/[0.04] blur-[150px] animate-pulse" style={{ animationDuration: '12s' }} />
           <div className="absolute top-[40%] left-[60%] w-[30%] h-[30%] rounded-full bg-black/[0.02] blur-[100px] animate-pulse" style={{ animationDuration: '10s' }} />
         </div>
-        
+
         {/* Subtle Noise Texture Overlay */}
-        <div 
-          className="fixed inset-0 pointer-events-none z-50 opacity-[0.025] mix-blend-overlay" 
+        <div
+          className="fixed inset-0 pointer-events-none z-50 opacity-[0.025] mix-blend-overlay"
           style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.8%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E")' }}
         />
-        
+
         <SmoothScroll>
           {children}
           <BottomNav />

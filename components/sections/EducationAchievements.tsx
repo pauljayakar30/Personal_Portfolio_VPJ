@@ -108,9 +108,8 @@ export default function EducationAchievements() {
               >
                 {/* Dot */}
                 <div
-                  className={`absolute -left-[41px] top-1.5 w-4 h-4 rounded-full ring-[6px] ring-[#f5f5f7] transition-colors duration-300 ${
-                    edu.isCurrent ? "bg-[#0066cc]" : "bg-black/[0.1]"
-                  }`}
+                  className={`absolute -left-[41px] top-1.5 w-4 h-4 rounded-full ring-[6px] ring-[#f5f5f7] transition-colors duration-300 ${edu.isCurrent ? "bg-[#0066cc]" : "bg-black/[0.1]"
+                    }`}
                 />
 
                 {/* Head row */}

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import ImageCarousel from "./ImageCarousel";
+import ImageCarousel from "../ui/ImageCarousel";
 
 export default function Experience() {
   const experiences = [
