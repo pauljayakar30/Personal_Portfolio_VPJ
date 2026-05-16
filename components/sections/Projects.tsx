@@ -122,7 +122,10 @@ export default function Projects() {
                     />
                   )}
 
-                  <div className="flex items-baseline mb-2">
+                  <div className="flex items-baseline gap-4 mb-2">
+                    <span className={`text-sm font-bold tracking-widest transition-colors duration-300 ${isActive ? 'text-[#007AFF]' : 'text-gray-300'}`}>
+                      0{index + 1}
+                    </span>
                     <h3 className={`text-4xl md:text-5xl lg:text-[4rem] font-black tracking-tighter leading-none transition-colors duration-300 ${isActive ? 'text-[#1d1d1f]' : 'text-gray-300'}`}>
                       {project.title}
                     </h3>
