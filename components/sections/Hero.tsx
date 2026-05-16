@@ -82,31 +82,19 @@ export default function Hero() {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
-          className="text-4xl sm:text-5xl md:text-7xl lg:text-[90px] xl:text-[110px] leading-[1.1] md:leading-[1.05] font-semibold tracking-tighter mb-4 md:mb-6 text-[#1d1d1f] whitespace-normal md:whitespace-nowrap"
+          className="text-4xl sm:text-5xl md:text-7xl lg:text-[90px] xl:text-[110px] leading-[1.1] md:leading-[1.05] font-black tracking-tighter mb-4 md:mb-6 text-[#1d1d1f] whitespace-normal md:whitespace-nowrap"
         >
-          Vasu Paul Jayakar.
+          Vasu Paul Jayakar<span className="text-gray-300 font-medium font-serif italic">.</span>
         </motion.h1>
 
         <motion.h2
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-          className="text-xl sm:text-2xl md:text-4xl font-semibold tracking-tight mb-6 md:mb-8 text-[#0066cc]"
+          className="text-xl sm:text-2xl md:text-3xl font-medium tracking-tight mb-10 md:mb-12 text-[#86868B]"
         >
-          Aspiring AI & ML Engineer
+          I build things that <span className="font-serif italic text-[#1d1d1f]">work</span> and look like they <span className="font-serif italic text-[#1d1d1f]">shouldn&apos;t be free</span>.
         </motion.h2>
-
-        <motion.p
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
-          className="text-base sm:text-lg md:text-2xl text-[#86868B] max-w-2xl mx-auto font-medium tracking-tight leading-relaxed mb-10 md:mb-12"
-        >
-          I build intelligent systems and beautiful interfaces.
-          <br />
-          Currently pursuing B.Tech in Computer Science at <br />
-          Mohan Babu University.
-        </motion.p>
 
         <motion.div
           initial={{ y: 20, opacity: 0 }}

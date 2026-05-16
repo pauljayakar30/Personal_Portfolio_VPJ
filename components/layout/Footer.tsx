@@ -11,7 +11,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="fixed bottom-0 left-0 right-0 z-40 bg-[#f5f5f7]">
+    <footer className="fixed bottom-0 left-0 right-0 z-40">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-3 flex items-center justify-between">
         {/* Left: Branding + Copyright */}
         <div className="flex items-center gap-2">
